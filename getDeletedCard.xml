@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Trello Api Tests">
+    <test name="getDeletedCard">
+        <classes>
+            <class name="ValidTestCases">
+                <methods>
+                    <include name="createFirstBoard"/>
+                    <include name="createBoardWithInvalidKey"/>
+                    <include name="getBoardById"/>
+                    <include name="createList"/>
+                    <include name="createListWithInvalidBoardId"/>
+                    <include name="getListById"/>
+                    <include name="createCard"/>
+                    <include name="createCardWithInvalidToken"/>
+                    <include name="getCardById"/>
+                    <include name="createChecklist"/>
+                    <include name="createChecklistWithInvalidCardId"/>
+                    <include name="getChecklistById"/>
+                    <include name="updateBoardName"/>
+                    <include name="getBoardAfterUpdate"/>
+                    <include name="deleteChecklist"/>
+                    <include name="getDeletedChecklist"/>
+                    <include name="deleteCard"/>
+                    <include name="getDeletedCard"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
