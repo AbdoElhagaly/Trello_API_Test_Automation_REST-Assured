@@ -32,3 +32,39 @@ The framework covers full CRUD (Create, Read, Update, Delete) operations across 
 ---
 
 ## 📁 Project Structure
+
+TrelloApi/
+
+├── src/
+
+│   └── test/
+
+│       ├── java/
+
+│       │   ├── BaseTest.java              # Sets RestAssured base URI, setup/teardown
+
+│       │   ├── Config.java                # API key & token configuration
+
+│       │   ├── ValidTestCases.java        # All test cases (CRUD + negative scenarios)
+
+│       │   └── CustomListeners/
+
+│       │       └── TestListeners.java     # Console logging for test results
+
+│       └── resources/
+
+│           └── META-INF/services/
+
+│               └── org.testng.ITestNGListener
+
+├── allure-results/                        # Raw Allure result files (generated after a run)
+
+├── createChecklist.xml                    # TestNG suite: run flow up to checklist creation
+
+├── getDeletedCard.xml                     # TestNG suite: run flow up to card deletion
+
+├── getListById.xml                        # TestNG suite: run flow up to fetching a list
+
+├── pom.xml                                # Maven build configuration
+
+└── README.md
